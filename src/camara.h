@@ -20,7 +20,7 @@ class Camera{
 private:
 	vec3 cameraPos;
 	vec3 cameraFront;
-	vec3 Up = {0,1,0};
+	vec3 Up = {0,-1,0};
 	vec3 cameraTarget= { 0,0,0 };
 	vec3 cameraDirection = normalize(cameraPos - cameraTarget);
 	vec3 cameraRight = normalize(cross(Up, cameraDirection));

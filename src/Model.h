@@ -1,5 +1,4 @@
 #pragma once
-//para textura
 #include "Mesh.h"
 #include <SOIL.h>
 #include <assimp\Importer.hpp>
@@ -9,17 +8,18 @@
 class Model
 {
 public:
-	Model(GLchar* path);
-	void Draw(Shader shader, GLint drawMode);
-
+	Model();
+	Model(GLchar*);
+	void Draw(Shader, GLint);
 private:
 	vector<Mesh> meshes;
 	string directory;
-	vector<Texture> textures_loaded;	
+	vector<Texture> textures_loaded;
+	void loadModel(string);
+	void processNode(aiNode*, const aiScene*);
+	Mesh processMesh(aiMesh*, const aiScene*);
+	vector<Texture> loadMaterialTextures(aiMaterial*, aiTextureType, string);
+	GLint TextureFromFile(const char*, string);
 
-	void loadModel(string path);
-	void processNode(aiNode* node, const aiScene* scene);
-	Mesh processMesh(aiMesh* mesh, const aiScene* scene);
-	vector<Texture> loadMaterialTextures(aiMaterial* mat, aiTextureType type, string typeName);
-	GLint TextureFromFile(const char* path, string directory);
+
 };

@@ -60,7 +60,7 @@ void Camera::MouseMove(GLFWwindow* window, double xpos, double ypos) {
 //OK
 void Camera::MouseScroll(GLFWwindow* window, double xScroll, double yScroll) {
 	if (FOV >= 1.0f && FOV <= 45)
-		FOV -= 0.1* yScroll;
+		FOV -= yScroll;
 	if (FOV <= 1.0f)
 		FOV = 1.0f;
 	if (FOV >= 45)
