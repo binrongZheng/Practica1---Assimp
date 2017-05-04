@@ -228,8 +228,6 @@ int main() {
 		myCamera.DoMovement(window);
 		view = myCamera.LookAt();
 
-
-//		GLint modelLoc = glGetUniformLocation(myShader.Program,"model");
 		GLint viewLoc = glGetUniformLocation(myShader.Program, "view");
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, value_ptr(view));
 		GLint projectionLoc = glGetUniformLocation(myShader.Program, "projection");
