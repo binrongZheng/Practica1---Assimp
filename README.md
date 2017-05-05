@@ -1,10 +1,10 @@
 # Practica1---Assimp
-Quan descargar la carpeta d'aquest projecte, pot ser no trobar les libreries, s'ha de cambiar "propierties" -> "Configuration Manager" -> "platform" a (Win32) i "Active solution platform" a (x86), i s'ha de afegir la carpeta lib a la carpeta glew, la carpeta DLL i lib(de assimp) a la carpeta assimp
+Cuando descargar la carpeta de este proyecto, puede ser no encontrar las librerías, se debe cambiar "propierties" -> "Configuration Manager" -> "platform" en (Win32) y "Active solution platform" en (x86), y se debe añadir la carpeta lib en la carpeta Glew, la carpeta DLL y lib (de assimp) en la carpeta assimp
 
-Aquest projecte:
+Este proyecto:
 
-Utilitzar el key "0", "1", "2" i "3" per canviar els objectes.
+Utilizar el key "0", "1", "2" y "3" para cambiar los objetos.
 
-Utilitzar el ratolí i scroll per rotar i moure la visió de la camera.
+Utilizar el ratón y scroll para rotar y mover la visión de la cámara.
 
-Utilitzar el key "w", "a", "s" i "d" per moure la camera.
+Utilizar el key "w", "a", "s" y "d" para mover la cámara.
